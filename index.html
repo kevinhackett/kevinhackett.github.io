@@ -17,6 +17,7 @@ Use without permission strictly prohibited. Please contact owner before using.
 
 body {
   background: url(http://i.imgur.com/1r2FjqO.jpg);
+  background: url(https://cdn.rawgit.com/kevinhackett/kevinhackett.github.io/master/img/bg.jpg);
   background-position: center top;
   background-size: cover;
   background-repeat: no-repeat;
@@ -39,6 +40,8 @@ img {
   height: 120px;
 }
 
+/* had to remove the bg
+
 .background {
 	height: 60%;
 	margin-top: 20%;
@@ -59,7 +62,19 @@ img {
 	margin-top: 25vh;
 }
 
+*/
 
+
+#Sbutton1 {
+    margin-top: 54vh;
+    margin-left: 15%;
+}
+
+#Sbutton2 {
+    margin-top: -125px;
+    margin-right: 15%;
+    float: right;
+}
 
 
 #button2 {
@@ -90,6 +105,57 @@ img {
 }
 }
 
+
+
+/* Button Animations */
+
+
+
+img {
+	animation: fadein 3s;
+    -moz-animation: fadein 3s; /* Firefox */
+    -webkit-animation: fadein 3s; /* Safari and Chrome */
+    -o-animation: fadein 3s; /* Opera */
+
+}
+
+img:active {
+opacity: 0.8;
+}
+
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-moz-keyframes fadein { /* Firefox */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-webkit-keyframes fadein { /* Safari and Chrome */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-o-keyframes fadein { /* Opera */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
 </style>
 </html>
 <body>
@@ -104,7 +170,7 @@ img {
   </a>
 </div>
 
-<center class="background">
+<div class="background">
 
 <div id="small">
   <a href="https://soundcloud.com/kevin-hackett">
@@ -116,5 +182,5 @@ img {
     <img id="Sbutton2" src="https://cdn.rawgit.com/kevinhackett/kevinhackett.github.io/master/img/design.png">
   </a>
 </div>
-</center>
+</div>
 </body>
